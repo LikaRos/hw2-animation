@@ -82,16 +82,31 @@
 .hero__planeImage_left {
   left: 0px;
   top: 57px;
-  animation: left_plane 3s linear infinite normal 0s running forwards;
+  animation: plane 3s linear 1 normal 0.2s running none;
 }
 
-.hero__planeImage_left:hover,
-.hero__planeImage_left:focus {
-  animation-play-state: paused;
+.hero__image:active .hero__planeImage_left {
+  animation: slide 2s ease-in-out 0.5s 1 alternate;
 }
 
-.hero__planeImage_left:active {
+@keyframes plane {
+  0% {
+    left: 0%;
+    top: 57px;
+    transform: rotate(10deg);
+  }
+  20% {
+    left: 50%;
+    top: -25px;
+    transform: rotate(30deg);
+  }
+
+  100% {
+    left: 150%;
+    top: 57px;
+  }
 }
+
 .hero__planeImage_right {
   right: -42px;
   top: 133px;
@@ -134,22 +149,3 @@
 //   animation-fill-mode: none;
 //   left_plane 3s linear infinite normal running 0s forwards;
 // }
-@keyframes left_plane {
-  0% {
-    left: 0%;
-    top: 57px;
-    transform: rotate(10deg);
-    /* css свойства */
-  }
-  20% {
-    left: 50%;
-    top: -25px;
-    transform: rotate(30deg);
-  }
-
-  100% {
-    left: 100%;
-    top: 57px;
-    /* css свойства */
-  }
-}
