@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -439,6 +440,12 @@ body {
 .hero__planeImage_left {
   left: 0px;
   top: 57px;
+  animation: left_plane 3s linear infinite normal 0s running forwards;
+}
+
+.hero__planeImage_left:hover,
+.hero__planeImage_left:focus {
+  animation-play-state: paused;
 }
 
 .hero__planeImage_right {
@@ -447,10 +454,8 @@ body {
   z-index: -1;
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .hero__mainImage {
-    display: block;
-  }
+.hero__mainImage {
+  display: block;
 }
 
 .circle {
@@ -475,6 +480,24 @@ body {
   border-bottom: 7px solid rgba(0, 0, 0, 0);
 }
 
+@keyframes left_plane {
+  0% {
+    left: 0%;
+    top: 57px;
+    transform: rotate(10deg);
+    /* css свойства */
+  }
+  20% {
+    left: 50%;
+    top: -25px;
+    transform: rotate(30deg);
+  }
+  100% {
+    left: 100%;
+    top: 57px;
+    /* css свойства */
+  }
+}
 .features__container {
   padding-bottom: 123px;
   position: relative;

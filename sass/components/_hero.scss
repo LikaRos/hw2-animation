@@ -81,19 +81,24 @@
 
 .hero__planeImage_left {
   left: 0px;
-
   top: 57px;
+  animation: left_plane 3s linear infinite normal 0s running forwards;
 }
 
+.hero__planeImage_left:hover,
+.hero__planeImage_left:focus {
+  animation-play-state: paused;
+}
+
+.hero__planeImage_left:active {
+}
 .hero__planeImage_right {
   right: -42px;
   top: 133px;
   z-index: -1;
 }
 .hero__mainImage {
-  @media screen and (min-width: 1440px) and (max-width: 1920px) {
-    display: block;
-  }
+  display: block;
 }
 
 .circle {
@@ -115,4 +120,36 @@
   border-top: 7px solid rgba(0, 0, 0, 0);
   border-left: 13px solid $accentWhiteColor;
   border-bottom: 7px solid rgba(0, 0, 0, 0);
+}
+
+// /*-- Animation  --*/
+// .hero__planeImage_left {
+//   animation-name: left_plane;
+//   animation-duration: 3s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: 1;
+//   animation-direction: normal;
+//   animation-play-state: running;
+//   animation-delay: 0s;
+//   animation-fill-mode: none;
+//   left_plane 3s linear infinite normal running 0s forwards;
+// }
+@keyframes left_plane {
+  0% {
+    left: 0%;
+    top: 57px;
+    transform: rotate(10deg);
+    /* css свойства */
+  }
+  20% {
+    left: 50%;
+    top: -25px;
+    transform: rotate(30deg);
+  }
+
+  100% {
+    left: 100%;
+    top: 57px;
+    /* css свойства */
+  }
 }
