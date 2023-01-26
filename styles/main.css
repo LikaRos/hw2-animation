@@ -318,8 +318,12 @@ body {
 
 .navigation__link {
   color: #212832;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 17px;
+}
+.navigation__link:hover, .navigation__link:focus, .navigation__link:active {
+  color: #f15a2b;
+  transform: scale(1.5);
 }
 
 .authorization__item_first {
@@ -339,7 +343,7 @@ body {
 
 .authorization__link {
   color: #212832;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 17px;
 }
 

@@ -29,8 +29,14 @@
 }
 .navigation__link {
   color: $accentBlackColor;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 17px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $decorRedColor;
+    transform: scale(1.5);
+  }
 }
 
 .authorization__item_first {
@@ -47,7 +53,7 @@
 }
 .authorization__link {
   color: $accentBlackColor;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 17px;
 }
 .authorization__link_rotate {
