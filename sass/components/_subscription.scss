@@ -1,0 +1,89 @@
+.subscription__container {
+  padding: 79px 5px 78px 5px;
+  border-radius: 129px 20px 20px 20px;
+  background-color: rgba(223, 215, 249, 0.2);
+  position: relative;
+}
+.subscription__div {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom left, #747def 0%, #5e3be1 100%);
+  position: absolute;
+  top: -12px;
+  right: -21px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subscription__circleLeft {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  opacity: 20%;
+}
+.subscription__circleRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 20%;
+}
+
+.subscription__title {
+  font-family: $primaryFont;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 1.63;
+  text-align: center;
+  color: $primaryGreyColor;
+  max-width: 859px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 74px;
+}
+.subscription__form {
+  text-align: center;
+}
+.subscription__input {
+  font-family: $inputFont;
+  font-size: 14px;
+  line-height: 1.2;
+  height: 68px;
+  width: 421px;
+  padding: 10px 10px 10px 66px;
+  border-radius: 10px;
+  border: none;
+  outline: transparent;
+  background-color: $accentWhiteColor;
+  color: $accentInputGreyColor;
+}
+
+.subscription__input::placeholder {
+  margin-right: 14px;
+
+  font-family: $inputFont;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.subscription__submit {
+  height: 68px;
+  width: 180px;
+  padding: 22px 50px;
+  border-radius: 10px;
+  border: none;
+  outline: transparent;
+  background-color: #ff946d;
+  margin-left: 24px;
+  color: $accentWhiteColor;
+}
+.subscription__svg {
+  transform: translate(56px, 3px);
+}
+.subscription__plusImage {
+  position: absolute;
+  bottom: -68px;
+  right: -98px;
+}

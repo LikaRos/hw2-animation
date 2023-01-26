@@ -1,0 +1,28 @@
+.logotypes-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 96px;
+}
+
+.logotypes__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 128px;
+}
+.logotypes__item {
+  border-radius: 15px;
+}
+.logotypes__link {
+  display: block;
+  padding: 20px 20px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 2px 36px 51px -33px rgb(0 0 0 / 25%);
+  }
+}
+
+.logotypes__image {
+  width: 100%;
+}
