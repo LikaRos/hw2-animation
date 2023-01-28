@@ -1,34 +1,54 @@
 .booking__container {
-  padding-bottom: 200px;
+  padding-bottom: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-left: 56px;
-  padding-right: 126px;
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+    padding-right: 126px;
+  }
 }
 .booking__wrapper {
-  max-width: 512px;
+  width: 440px;
+  @media screen and (min-width: 1440px) {
+    max-width: 512px;
+  }
 }
 .booking__preview {
+  text-align: center;
   margin-bottom: 10px;
-  text-align: left;
   color: $primaryGreyColor;
-  font-family: $primaryFont;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
   text-shadow: 0px 4px 4px $accentGreyColor;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
 }
 .booking__header {
   margin-bottom: 66px;
-  text-align: left;
+  text-align: center;
   font-family: $headingFont;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1.29;
   color: $accentDarkBlueColor;
   text-transform: capitalize;
   text-shadow: 0px 4px 4px $accentGreyColor;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 66px;
+    text-align: left;
+    font-size: 50px;
+  }
 }
 .booking__svgWrapper {
   width: 47px;
@@ -40,40 +60,77 @@
   background-color: $decorYellowColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 21px;
+
+  @media screen and (min-width: 1440px) {
+    //  width: 47px;
+    //  height: 48px;
+    //  display: flex;
+    //  align-items: center;
+    //  justify-content: center;
+    //  border-radius: 10px;
+    //  background-color: $decorYellowColor;
+    //  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    //  margin-right: 21px;
+  }
 }
 .booking__svgWrapper_yellow {
   background-color: $decorYellowColor;
 }
+
 .booking__svgWrapper_red {
   background-color: $decorRedColor;
 }
+
 .booking__svgWrapper_blue {
   background-color: $decorBlueColor;
 }
+
 .booking__icon {
   fill: $accentWhiteColor;
 }
 .booking__item {
-  max-width: 395px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  width: 390px;
+  @media screen and (min-width: 1440px) {
+    max-width: 395px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
-.booking__item:not(:last-child) {
+.booking__item {
   margin-bottom: 48px;
+
+  &:not(:last-child) {
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 48px;
+    }
+  }
 }
 .booking__textWrapper {
-  max-width: 327px;
+  width: 330px;
+  @media screen and (min-width: 1440px) {
+    max-width: 327px;
+  }
 }
 .booking__subTitle,
 .booking__text {
-  font-family: $primaryFont;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.7;
   color: $primaryGreyColor;
   text-align: left;
   text-shadow: 0px 4px 4px $accentGreyColor;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+    color: $primaryGreyColor;
+    text-align: left;
+    text-shadow: 0px 4px 4px $accentGreyColor;
+  }
 }
 .booking__text {
   font-weight: 400;
@@ -85,8 +142,14 @@
   box-shadow: 84px -52px 316px -82px #59b1e6;
   border-radius: 20px;
   position: relative;
-
-  //   box-shadow: 0px 4px rgb(0 0 0 / 25%);
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    padding: 20px 25px 31px 25px;
+    background-color: #fff;
+    box-shadow: 84px -52px 316px -82px #59b1e6;
+    border-radius: 20px;
+    position: relative;
+  }
 }
 .booking__imageWrapper::before {
   content: "";
@@ -101,6 +164,20 @@
   border-radius: 20px;
   background-image: linear-gradient(to right bottom, #f3f3f3, #bebebe);
   filter: blur(2px);
+  @media screen and (min-width: 1440px) {
+    content: "";
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right bottom, #f3f3f3, #bebebe);
+    filter: blur(2px);
+  }
 }
 
 .booking__image {
@@ -108,46 +185,80 @@
 }
 .booking__textBig,
 .overlap__textBig {
-  font-family: $primaryFont;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.7;
   color: $primaryBlackColor;
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: $primaryBlackColor;
+    margin-bottom: 13px;
+  }
 }
 .booking__textMiddleWrapper {
   display: flex;
   margin-bottom: 21px;
-  font-family: $primaryFont;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
   color: $primaryGreyColor;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $primaryGreyColor;
+  }
 }
 .booking__span {
   margin-right: 13px;
   margin-left: 3px;
+  @media screen and (min-width: 1440px) {
+    margin-right: 13px;
+    margin-left: 3px;
+  }
 }
 .booking__textSmall {
-  font-family: $primaryFont;
   font-style: regular;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
   color: $primaryGreyColor;
+  @media screen and (min-width: 1440px) {
+    font-style: regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $primaryGreyColor;
+  }
 }
 
 .booking__textMiddle {
-  font-family: $primaryFont;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.25;
   color: $primaryGreyColor;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $primaryGreyColor;
+  }
 }
 
 .booking__svgList {
   display: flex;
   margin-bottom: 30px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    margin-bottom: 30px;
+  }
 }
 .booking__svgItem {
   display: flex;
@@ -156,38 +267,68 @@
   background-color: #f5f5f5;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
 }
 .booking__svgItem:not(:last-child) {
-  margin-right: 13px;
+  @media screen and (min-width: 1440px) {
+    margin-right: 13px;
+  }
 }
 .booking__buildingWrapper {
   display: flex;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
 }
 
 .booking__heartWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .booking__svgBuilding {
   margin-right: 15px;
 }
 .overlap__textSmall_grey {
-  font-family: $primaryFont;
   font-style: regular;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
   color: $primaryGreyColor;
+  @media screen and (min-width: 1440px) {
+    font-style: regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $primaryGreyColor;
+  }
 }
 .overlap__textSmall_black {
-  font-family: $primaryFont;
   font-style: regular;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.25;
   color: $primaryBlackColor;
+  @media screen and (min-width: 1440px) {
+    font-style: regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: $primaryBlackColor;
+  }
 }
 .overlap__span {
   color: $accentVioletColor;
@@ -200,12 +341,27 @@
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 4px rgb(0 0 0 / 25%);
-  right: -30%;
-  bottom: 14%;
+  right: 17%;
+  bottom: -26%;
   display: flex;
+
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    border: 1px solid $primaryBlackColor;
+
+    padding: 18px 25px 22px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 4px rgb(0 0 0 / 25%);
+    right: -30%;
+    bottom: 14%;
+    display: flex;
+  }
 }
 .overlap__textWrapper {
-  margin-left: 11px;
+  @media screen and (min-width: 1440px) {
+    margin-left: 11px;
+  }
 }
 .overlap__image {
   width: 50px;
@@ -225,4 +381,11 @@
   width: 84px;
   background-color: $accentVioletColor;
   left: 0;
+  @media screen and (min-width: 1440px) {
+    position: absolute;
+    height: 3px;
+    width: 84px;
+    background-color: $accentVioletColor;
+    left: 0;
+  }
 }

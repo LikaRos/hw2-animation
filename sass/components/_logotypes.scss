@@ -1,17 +1,41 @@
 .logotypes-container {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 96px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 1440px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 96px;
+  }
 }
 
 .logotypes__list {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 128px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1440px) {
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 128px;
+  }
 }
+
 .logotypes__item {
-  border-radius: 15px;
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - ($indentLogo * ($itemsLogo - 1))) / $itemsLogo);
+    margin-bottom: 40px;
+    &:not(:nth-child(even)) {
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    border-radius: 15px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 .logotypes__link {
   display: block;
