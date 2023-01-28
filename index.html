@@ -74,25 +74,7 @@
 
     <section class="hero">
       <div class="container hero__container ">
-			 <!-- <div class="hero__mobileImage">
-          <img
-            class="hero__mobilePlaneImage hero__planeImage_left"
-            src="images/plane.png"
-            width="139"
-            alt="plane"
-          />
-          <img
-            class="hero__mobileMainImage"
-            src="images/traveller.png"
-            alt="traveller"
-          />
-          <img
-            class="hero__mobilePlaneImage hero__planeImage_right"
-            src="images/plane.png"
-            width="139"
-            alt="plane"
-          />
-        </div> -->
+		
         <div class="hero__text">
           <p class="hero__preview">Best Destinations around the world</p>
           <h1 class="hero__title">
@@ -150,7 +132,7 @@
 						Built Wicket longer admire do barton vanity itself do in it.
 						</p>
 				</div>
-  </li>
+			  </li>
 
           <li class="features__item">
 				<div class="features__itemWrapper">   
@@ -204,12 +186,13 @@
 
         <ul class="destinations__list">
           <li class="destinations__listItem">
-            <img
+				<a class="destination__link" href="#"> <img
               class="destinations__image"
               width="315"
               src="images/italy.png"
               alt="rome"
-            />
+            /> 
+           
             <div class="destinations__textOverlap">
               <div class="destinations__textWrapper">
                 <p class="destinations__country">Rome, Italy</p>
@@ -225,14 +208,17 @@
                 <p class="destinations__duration">10 Days Trip</p>
               </div>
             </div>
+				</a>
           </li>
           <li class="destinations__listItem">
-            <img
+				<a class="destination__link" href="#">  
+					 <img
               class="destinations__image"
               width="315"
               src="images/london.png"
               alt="london"
-            />
+            /> 
+         
 
             <div class="destinations__textOverlap">
               <div class="destinations__textWrapper">
@@ -249,19 +235,18 @@
                 <p class="destinations__duration">12 Days Trip</p>
               </div>
             </div>
+				</a>
           </li>
           <li class="destinations__listItem">
-            <img
-              class="destinations__decor"
-              src="images/decore-spiral.png"
-              alt="spiral"
-            />
-            <img
+				<a class="destination__link"  href="#"> <img
               class="destinations__image"
               src="images/europe.png"
               alt="full-europe"
-            />
-            <div class="destinations__textOverlap">
+            />     <img
+              class="destinations__decor"
+              src="images/decore-spiral.png"
+              alt="spiral"
+            />       <div class="destinations__textOverlap">
               <div class="destinations__textWrapper">
                 <p class="destinations__country">Full Europe</p>
                 <p class="destinations__counter">$15k</p>
@@ -275,7 +260,10 @@
                 </svg>
                 <p class="destinations__duration">28 Days Trip</p>
               </div>
-            </div>
+            </div>      </a>
+           
+        
+           
           </li>
         </ul>
       </div>
@@ -421,12 +409,12 @@
 				<div class="testimonials__container equal-columns">
 				<div  class="testimonials__leftGroup">  
 					<p class="testimonials__subTitle">Testimonials</p>
-				<h2 class="testimonials__title">What people say about Us.</h2>
+					<h2 class="testimonials__title">What people say about Us.</h2>
 				</div>	
-				<img class="testimonials__image" src="images/boy.png" alt="Mike Taylor">
+				
 				<div  class="testimonials__rightGroup">
 				
-					
+					<img class="testimonials__image" src="images/boy.png" alt="Mike Taylor">
 						<p class="testimonials__text">“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p>
 						<p class="testimonials__text testimonials__text_middle">Mike Taylor</p>
 						<p class="testimonials__text">Lahore, Pakistan</p>
@@ -443,28 +431,31 @@
 		<section class="logotypes">
 			<div class="container logotypes-container">
 				<ul class="logotypes__list ">
-				
-					<li class="logotypes__item"><a class="logotypes__link"  href="">
-		<img  class="logotypes__image" src="images/axon.png" alt="axon">
-
-					</a></li>
-					<li class="logotypes__item"><a class="logotypes__link" href="">
-		<img  class="logotypes__image" src="images/jetstar.png" alt="jetstar">
-
-					</a></li>
-					<li class="logotypes__item"><a class="logotypes__link"  href="">
-		<img class="logotypes__image" src="images/expedia.png" alt="expedia">
-
-					</a></li>
-					<li class="logotypes__item"><a class="logotypes__link"  href="">
-		<img  class="logotypes__image" src="images/qantas.png" alt="qantas">
-
-					</a></li>
 					<li class="logotypes__item">
 						<a class="logotypes__link"  href="">
-		<img  class="logotypes__image" src="images/alitalia.png" alt="alitalia">
-
-					</a></li>
+							<img  class="logotypes__image" src="images/axon.png" alt="axon">
+						</a>
+					</li>
+					<li class="logotypes__item">
+						<a class="logotypes__link" href="">
+							<img  class="logotypes__image" src="images/jetstar.png" alt="jetstar">
+   					</a>
+					</li>
+					<li class="logotypes__item">
+						<a class="logotypes__link"  href="">
+							<img class="logotypes__image" src="images/expedia.png" alt="expedia">
+						</a>
+					</li>
+					<li class="logotypes__item">
+						<a class="logotypes__link"  href="">
+							<img  class="logotypes__image" src="images/qantas.png" alt="qantas">
+						</a>
+					</li>
+					<li class="logotypes__item">
+						<a class="logotypes__link"  href="">
+							<img  class="logotypes__image" src="images/alitalia.png" alt="alitalia">
+						</a>
+					</li>
 				</ul>
 
 			</div>
@@ -514,8 +505,8 @@
           <div class="footer__logoWrapper">
             <a class="footer__logo" href="#">Jaddoo.</a>
             <p class="logo__text">Book your trip in minute, get full Control for much longer.</p>
-  </div>
-            <ul class="footer__list footer__list_left">
+ 			 </div>
+         <ul class="footer__list footer__list_left">
               <h3 class="footer__listTitle">Company</h3>
               <li class="footer__item">
                 <a class="footer__link" href="#">About</a>
@@ -554,7 +545,8 @@
         
 
           <!-- Footer Socials  -->
-<div class="footer__socials">   <ul class="svg__list">
+<div class="footer__socials">   
+	<ul class="svg__list">
             <li class="svg__item">
               <a class="svg__link" href="">
                 <svg class="svg__icon" width="13" height="16">
