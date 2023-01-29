@@ -10,13 +10,16 @@
 .footer__flex {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row;
   }
 }
 .equal-columns > * {
-  flex: 1;
   @media screen and (min-width: 1440px) {
     flex: 1;
   }
@@ -25,6 +28,11 @@
   width: 207px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    order: 1;
+    flex: 50%;
+  }
+
   @media screen and (min-width: 1440px) {
     width: 207px;
     margin-right: 83px;
@@ -52,6 +60,10 @@
   text-align: left;
   color: $primaryGreyColor;
   margin-top: 19px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    width: 207px;
+  }
+
   @media screen and (min-width: 1440px) {
     font-weight: 500;
     font-size: 13px;
@@ -68,6 +80,11 @@
 
   padding-top: 20px;
   max-width: 115px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 1440px) {
     padding-top: 20px;
     max-width: 115px;
@@ -230,20 +247,40 @@
   }
 }
 .footer__socials {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
   @media screen and (min-width: 1440px) {
     margin-left: 82px;
   }
 }
 .footer__list_left {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    order: 3;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 72px;
   }
 }
 .footer__list_middle {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    order: 4;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 91px;
   }
 }
+.footer__list_right {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    order: 5;
+  }
+}
+
 .footer__text {
   font-weight: 500;
   font-size: 14px;

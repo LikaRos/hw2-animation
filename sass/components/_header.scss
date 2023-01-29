@@ -3,12 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 48px;
-  padding-bottom: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
   font-family: $accentFont;
-  padding: 48px 18px 18px 18px;
+  padding: 48px 10px 18px 10px;
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: row;
@@ -33,6 +29,10 @@
 }
 .header__navigation {
   display: none;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    display: flex;
+    align-items: center;
+  }
   @media screen and (min-width: 1440px) {
     display: flex;
     align-items: center;
@@ -44,6 +44,9 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 20px;
+  }
   @media screen and (min-width: 1440px) {
     display: flex;
     margin-right: 86px;
@@ -55,6 +58,7 @@
 .header__authorization {
   display: flex;
   align-items: center;
+
   @media screen and (min-width: 1440px) {
     display: flex;
     align-items: center;
@@ -63,6 +67,9 @@
 
 .navigation__item:not(:last-child) {
   margin-right: 55px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 20px;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 55px;
   }
@@ -94,12 +101,19 @@
 
 .authorization__item_first {
   margin-right: 52px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 52px;
   }
 }
 .authorization__item_middle {
   margin-right: 42px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 20px;
+  }
   @media screen and (min-width: 1440px) {
     margin-right: 42px;
   }

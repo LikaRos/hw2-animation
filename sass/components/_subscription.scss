@@ -87,6 +87,9 @@
   outline: transparent;
   background-color: $accentWhiteColor;
   color: $accentInputGreyColor;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 10px;
+  }
   @media screen and (min-width: 1440px) {
     padding: 10px 10px 10px 66px;
 
@@ -146,6 +149,11 @@
   position: absolute;
   bottom: -61px;
   right: -7px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    bottom: -64px;
+    right: -11px;
+  }
+
   @media screen and (min-width: 1440px) {
     //  position: absolute;
     bottom: -68px;
