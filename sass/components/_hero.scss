@@ -74,12 +74,6 @@
   }
   @media screen and (min-width: 1440px) {
     text-align: left;
-
-    //  font-weight: 500;
-    //  font-size: 16px;
-    //  line-height: 1.85;
-    //  width: 90%;
-    //  margin-bottom: 34px;
   }
 }
 .hero__btnWrapper {
@@ -90,11 +84,6 @@
   align-items: center;
   @media screen and (min-width: 1440px) {
     justify-content: flex-start;
-
-    //  display: flex;
-    //  flex-direction: row;
-    //  align-content: center;
-    //     align-items: center;
   }
 }
 
@@ -210,16 +199,3 @@
   border-left: 13px solid $accentWhiteColor;
   border-bottom: 7px solid rgba(0, 0, 0, 0);
 }
-
-// /*-- Animation  --*/
-// .hero__planeImage_left {
-//   animation-name: left_plane;
-//   animation-duration: 3s;
-//   animation-timing-function: linear;
-//   animation-iteration-count: 1;
-//   animation-direction: normal;
-//   animation-play-state: running;
-//   animation-delay: 0s;
-//   animation-fill-mode: none;
-//   left_plane 3s linear infinite normal running 0s forwards;
-// }

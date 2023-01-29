@@ -60,18 +60,6 @@
   background-color: $decorYellowColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 21px;
-
-  @media screen and (min-width: 1440px) {
-    //  width: 47px;
-    //  height: 48px;
-    //  display: flex;
-    //  align-items: center;
-    //  justify-content: center;
-    //  border-radius: 10px;
-    //  background-color: $decorYellowColor;
-    //  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    //  margin-right: 21px;
-  }
 }
 .booking__svgWrapper_yellow {
   background-color: $decorYellowColor;
