@@ -1517,6 +1517,7 @@ body {
   .testimonials__container {
     display: flex;
     flex-direction: row;
+    padding-top: 0px;
     padding-bottom: 188px;
   }
 }
@@ -1553,9 +1554,14 @@ body {
   left: 38%;
   top: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .testimonials__image {
+    left: 45%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .testimonials__image {
-    left: 48%;
+    left: -4%;
   }
 }
 
